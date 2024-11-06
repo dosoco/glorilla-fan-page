@@ -1,0 +1,19 @@
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card,
+.list-group-item {
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: #1db954;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1ed760;
+}

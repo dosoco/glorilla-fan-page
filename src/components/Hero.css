@@ -1,0 +1,29 @@
+/* src/components/Hero.css */
+
+.hero-image {
+    background-image: url('/glorilla.jpg'); /* Path to the image in the public folder */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 60vh; /* Sets the height to 60% of the viewport height */
+    position: relative; /* Positions the element relative to its normal position */
+  }
+  
+  .hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for readability */
+  }
+  
+  .hero-content {
+
+    position: relative; /* Positions the content relative to the hero-image div */
+    z-index: 1; /* Ensures the content appears above the overlay */
+    top: 50%; /* Positions the content vertically */
+    transform: translateY(-50%); /* Centers the content vertically */
+  }
+  
